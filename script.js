@@ -24,8 +24,14 @@ document
     const decriseIntotal = IntotalAmount - inputField;
 
     const donateAmount = amountValueEl("amount");
+    const myModal = document.getElementById("my_modal_1");
+
+    if (inputField > 0 && inputField <= IntotalAmount) {
+      myModal.showModal();
+    }
+
     const donate = donateAmount + inputField;
-    if (inputField <= 0 || isNaN(inputField)) {
+    if (inputField <= 0 || isNaN(inputField) || inputField > IntotalAmount) {
       alert("Invaid Donation Amount");
     } else {
       document.getElementById("in_total_amount").innerText = decriseIntotal;
@@ -54,7 +60,11 @@ document
 
     const donateAmount = amountValueEl("second_amount");
     const donate = donateAmount + inputField;
-    if (inputField <= 0 || isNaN(inputField)) {
+    const myModal = document.getElementById("my_modal_1");
+    if (inputField > 0) {
+      myModal.showModal();
+    }
+    if (inputField <= 0 || isNaN(inputField) || inputField > IntotalAmount) {
       alert("Invaid Donation Amount");
     } else {
       document.getElementById("in_total_amount").innerText = decriseIntotal;
@@ -83,7 +93,12 @@ document
 
     const donateAmount = amountValueEl("third_amount");
     const donate = donateAmount + inputField;
-    if (inputField <= 0 || isNaN(inputField)) {
+    const myModal = document.getElementById("my_modal_1");
+    if (inputField > 0) {
+      myModal.showModal();
+    }
+
+    if (inputField <= 0 || isNaN(inputField) || inputField > IntotalAmount) {
       alert("Invaid Donation Amount");
     } else {
       document.getElementById("in_total_amount").innerText = decriseIntotal;
@@ -130,3 +145,5 @@ document
     showbtn("history");
     showbtnColor("history_add_btn");
   });
+
+document.getElementById("my_modal_1").addEventListener("click", function () {});
