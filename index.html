@@ -38,7 +38,7 @@
     </script>
   </head>
   <body>
-    <header class="font-Lexend">
+    <header class="font-Lexend sticky top-0 left-0">
       <div class="bg-navberColor">
         <div
           class="block lg:hidden flex items-center justify-center pt-5 gap-3"
@@ -50,7 +50,9 @@
           class="lg:w-4/5 w-11/12 mx-auto py-8 flex lg:flex-row lg:gap-0 gap-3 justify-between items-center"
         >
           <div class="">
-            <button class="btn bg-btnColor px-6 py-3 font-bold">Blog</button>
+            <button class="btn bg-btnColor px-6 py-3 font-bold0">
+              <a href="blog.html">Blog</a>
+            </button>
           </div>
           <div class="hidden lg:block">
             <div class="flex items-center justify-center gap-3">
@@ -60,16 +62,18 @@
           </div>
           <div class="flex items-center justify-center gap-1">
             <img class="w-6 h-6" src="assets/coin.png" alt="" />
-            <p><span>5500</span> BDT</p>
+            <p class="font-bold"><span>5500</span> BDT</p>
           </div>
         </nav>
       </div>
       <!-- banner section  -->
 
-      <section class="w-4/5 mx-auto">
-        <div class="flex justify-center items-center gap-5 pt-12 pb-6">
-          <button class="btn bg-white px-6 border">Donation</button>
-          <button class="btn bg-white border px-6">History</button>
+      <section class="bg-white">
+        <div class="w-4/5 mx-auto">
+          <div class="flex justify-center items-center gap-5 pt-12 pb-6">
+            <button class="btn bg-white px-6 border">Donation</button>
+            <button class="btn bg-white border px-6">History</button>
+          </div>
         </div>
       </section>
     </header>
@@ -168,6 +172,20 @@
         </div>
       </section>
     </main>
+
+    <!-- History -->
+
+    <div
+      class="border border-bg-navberColor p-5 rounded-xl lg:w-4/5 w-11/12 mx-auto"
+    >
+      <p class="font-Lexend mb-2">
+        96500 Taka is Donated for famine-2024 at Feni, Bangladesh
+      </p>
+      <p class="text-gray-500">
+        Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)
+      </p>
+    </div>
+    <footer class="bg-navberColor py-10 mt-10"></footer>
     <script src="script.js"></script>
   </body>
 </html>
