@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -62,7 +62,7 @@
           </div>
           <div class="flex items-center justify-center gap-1">
             <img class="w-6 h-6" src="assets/coin.png" alt="" />
-            <p class="font-bold"><span>5500</span> BDT</p>
+            <p class="font-bold"><span id="in_total_amount">5500</span> BDT</p>
           </div>
         </nav>
       </div>
@@ -87,7 +87,7 @@
           <div class="space-y-4">
             <button class="flex items-center justify-center btn">
               <img src="assets/coin.png" alt="" />
-              <p class="font-Lexend"><span>0</span>BDT</p>
+              <p class="font-Lexend"><span id="amount">0</span> BDT</p>
             </button>
             <h3 class="text-xl font-bold font-Lexend">
               Donate for Flood at Noakhali, Bangladesh
@@ -101,11 +101,15 @@
               lives of those in need.
             </p>
             <input
+              id="input_field"
               class="w-full border border-navberColor p-3 rounded-lg focus:outline-btnColor"
               type="text"
               placeholder=" Write Donation Amount"
             />
-            <button class="btn bg-btnColor text-center w-full font-Lexend">
+            <button
+              id="first_donate_btn"
+              class="btn bg-btnColor text-center w-full font-Lexend"
+            >
               Donate Now
             </button>
           </div>
@@ -117,7 +121,7 @@
           <div class="space-y-4">
             <button class="flex items-center justify-center btn">
               <img src="assets/coin.png" alt="" />
-              <p class="font-Lexend"><span>700</span> BDT</p>
+              <p class="font-Lexend"><span id="second_amount">700</span> BDT</p>
             </button>
             <h3 class="text-xl font-bold font-Lexend">
               Donate for Flood Relief in Feni,Bangladesh
@@ -131,11 +135,15 @@
               lives of those in need.
             </p>
             <input
+              id="second_input_field"
               class="w-full border border-navberColor p-3 rounded-lg focus:outline-btnColor"
               type="text"
               placeholder=" Write Donation Amount"
             />
-            <button class="btn bg-btnColor text-center w-full font-Lexend">
+            <button
+              id="second_donate_btn"
+              class="btn bg-btnColor text-center w-full font-Lexend"
+            >
               Donate Now
             </button>
           </div>
@@ -147,7 +155,7 @@
           <div class="space-y-4">
             <button class="flex items-center justify-center btn">
               <img src="assets/coin.png" alt="" />
-              <p class="font-Lexend"><span>1500</span> BDT</p>
+              <p class="font-Lexend"><span id="third_amount">1500</span> BDT</p>
             </button>
             <h3 class="text-xl font-bold font-Lexend">
               Aid for Injured in the Quota Movement
@@ -161,11 +169,15 @@
               lives of those in need.
             </p>
             <input
+              id="third_input_field"
               class="w-full border border-navberColor p-3 rounded-lg focus:outline-btnColor"
               type="text"
               placeholder=" Write Donation Amount"
             />
-            <button class="btn bg-btnColor text-center w-full font-Lexend">
+            <button
+              id="thrid_donate_btn"
+              class="btn bg-btnColor text-center w-full font-Lexend"
+            >
               Donate Now
             </button>
           </div>
