@@ -71,14 +71,18 @@
       <section class="bg-white">
         <div class="w-4/5 mx-auto">
           <div class="flex justify-center items-center gap-5 pt-12 pb-6">
-            <button class="btn bg-white px-6 border">Donation</button>
-            <button class="btn bg-white border px-6">History</button>
+            <button id="donation_add_btn" class="btn bg-white px-6 border">
+              Donation
+            </button>
+            <button id="history_add_btn" class="btn bg-white border px-6">
+              History
+            </button>
           </div>
         </div>
       </section>
     </header>
     <!-- card section  -->
-    <main class="lg:w-4/5 w-11/12 mx-auto">
+    <main id="donation" class="lg:w-4/5 w-11/12 mx-auto">
       <section class="flex flex-col gap-5">
         <div
           class="flex lg:flex-row flex-col justify-between items-center border border-bg-navberColor p-5 rounded-xl gap-5"
@@ -89,7 +93,7 @@
               <img src="assets/coin.png" alt="" />
               <p class="font-Lexend"><span id="amount">0</span> BDT</p>
             </button>
-            <h3 class="text-xl font-bold font-Lexend">
+            <h3 id="first_place_name" class="text-xl font-bold font-Lexend">
               Donate for Flood at Noakhali, Bangladesh
             </h3>
             <p class="text-gray-500">
@@ -123,7 +127,7 @@
               <img src="assets/coin.png" alt="" />
               <p class="font-Lexend"><span id="second_amount">700</span> BDT</p>
             </button>
-            <h3 class="text-xl font-bold font-Lexend">
+            <h3 id="second_place_name" class="text-xl font-bold font-Lexend">
               Donate for Flood Relief in Feni,Bangladesh
             </h3>
             <p class="text-gray-500">
@@ -157,7 +161,7 @@
               <img src="assets/coin.png" alt="" />
               <p class="font-Lexend"><span id="third_amount">1500</span> BDT</p>
             </button>
-            <h3 class="text-xl font-bold font-Lexend">
+            <h3 id="third_place_name" class="text-xl font-bold font-Lexend">
               Aid for Injured in the Quota Movement
             </h3>
             <p class="text-gray-500">
@@ -187,17 +191,18 @@
 
     <!-- History -->
 
-    <div
-      class="border border-bg-navberColor p-5 rounded-xl lg:w-4/5 w-11/12 mx-auto"
-    >
-      <p class="font-Lexend mb-2">
+    <div id="history" class="hidden flex flex-col gap-3">
+      <!-- <p class="font-Lexend mb-2">
         96500 Taka is Donated for famine-2024 at Feni, Bangladesh
       </p>
       <p class="text-gray-500">
         Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)
-      </p>
+      </p> -->
     </div>
     <footer class="bg-navberColor py-10 mt-10"></footer>
+
     <script src="script.js"></script>
   </body>
 </html>
+
+<!-- class="hidden border border-bg-navberColor p-5 rounded-xl lg:w-4/5 w-11/12 mx-auto" -->
