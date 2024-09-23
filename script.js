@@ -25,20 +25,23 @@ document
 
     const donateAmount = amountValueEl("amount");
     const donate = donateAmount + inputField;
+    if (inputField <= 0 || isNaN(inputField)) {
+      alert("Invaid Donation Amount");
+    } else {
+      document.getElementById("in_total_amount").innerText = decriseIntotal;
+      document.getElementById("amount").innerText = donate;
 
-    document.getElementById("in_total_amount").innerText = decriseIntotal;
-    document.getElementById("amount").innerText = donate;
-
-    // donation History
-    const donationTime = new Date();
-    const donationPlace = donationPlaceEl("first_place_name");
-    const transcation = document.getElementById("history");
-    transcation.innerHTML += `
+      // donation History
+      const donationTime = new Date();
+      const donationPlace = donationPlaceEl("first_place_name");
+      const transcation = document.getElementById("history");
+      transcation.innerHTML += `
     <div class="border p-5 rounded-xl lg:w-4/5 w-11/12 mx-auto">
     <p class='font-bold text-xl'>${inputField} Taka is  is ${donationPlace}</p>
     <p class='text-sm text-gray-600 mt-2'>Date: ${donationTime}</p>
     </div>
     `;
+    }
   });
 
 document
@@ -51,20 +54,23 @@ document
 
     const donateAmount = amountValueEl("second_amount");
     const donate = donateAmount + inputField;
+    if (inputField <= 0 || isNaN(inputField)) {
+      alert("Invaid Donation Amount");
+    } else {
+      document.getElementById("in_total_amount").innerText = decriseIntotal;
+      document.getElementById("second_amount").innerText = donate;
 
-    document.getElementById("in_total_amount").innerText = decriseIntotal;
-    document.getElementById("second_amount").innerText = donate;
-
-    // donation History
-    const donationTime = new Date();
-    const donationPlace = donationPlaceEl("second_place_name");
-    const transcation = document.getElementById("history");
-    transcation.innerHTML += `
+      // donation History
+      const donationTime = new Date();
+      const donationPlace = donationPlaceEl("second_place_name");
+      const transcation = document.getElementById("history");
+      transcation.innerHTML += `
      <div class="border p-5 rounded-xl lg:w-4/5 w-11/12 mx-auto">
      <p class='font-bold text-xl'>${inputField} Taka is  is Donated for ${donationPlace}</p>
      <p class='text-sm text-gray-600 mt-2'>Date: ${donationTime}</p>
      </div>
      `;
+    }
   });
 
 document
@@ -77,20 +83,23 @@ document
 
     const donateAmount = amountValueEl("third_amount");
     const donate = donateAmount + inputField;
+    if (inputField <= 0 || isNaN(inputField)) {
+      alert("Invaid Donation Amount");
+    } else {
+      document.getElementById("in_total_amount").innerText = decriseIntotal;
+      document.getElementById("third_amount").innerText = donate;
 
-    document.getElementById("in_total_amount").innerText = decriseIntotal;
-    document.getElementById("third_amount").innerText = donate;
-    // donation History
-    const donationTime = new Date();
-    // console.log(donationTime);
-    const donationPlace = donationPlaceEl("third_place_name");
-    const transcation = document.getElementById("history");
-    transcation.innerHTML += `
-     <div class="border p-5 rounded-xl lg:w-4/5 w-11/12 mx-auto">
-     <p class='font-bold text-xl'>${inputField} Taka is  is Donated for ${donationPlace}</p>
-     <p class='text-sm text-gray-600 mt-2'>Date: ${donationTime}</p>
-     </div>
-     `;
+      // donation History
+      const donationTime = new Date();
+      const donationPlace = donationPlaceEl("third_place_name");
+      const transcation = document.getElementById("history");
+      transcation.innerHTML += `
+  <div class="border p-5 rounded-xl lg:w-4/5 w-11/12 mx-auto">
+  <p class='font-bold text-xl'>${inputField} Taka is  is Donated for ${donationPlace}</p>
+  <p class='text-sm text-gray-600 mt-2'>Date: ${donationTime}</p>
+  </div>
+  `;
+    }
   });
 
 // donation and History
