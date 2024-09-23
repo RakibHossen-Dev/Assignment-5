@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-5</title>
+
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- daisyUI  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              btnColor: "rgb(180, 244, 97);",
+              navberColor: "rgb(249, 247, 243)",
+            },
+            fontFamily: {
+              Lexend: ["Lexend", "system-ui"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="font-Lexend">
+      <div class="bg-navberColor">
+        <div
+          class="block lg:hidden flex items-center justify-center pt-5 gap-3"
+        >
+          <img class="w-10 h-10" src="assets/logo.png" alt="" />
+          <p class="">Donate Bangladesh</p>
+        </div>
+        <nav
+          class="lg:w-4/5 w-11/12 mx-auto py-8 flex lg:flex-row lg:gap-0 gap-3 justify-between items-center"
+        >
+          <div class="">
+            <button class="btn bg-btnColor px-6 py-3 font-bold">Blog</button>
+          </div>
+          <div class="hidden lg:block">
+            <div class="flex items-center justify-center gap-3">
+              <img class="w-10 h-10" src="assets/logo.png" alt="" />
+              <p class="">Donate Bangladesh</p>
+            </div>
+          </div>
+          <div class="flex items-center justify-center gap-1">
+            <img class="w-6 h-6" src="assets/coin.png" alt="" />
+            <p><span>5500</span>BDT</p>
+          </div>
+        </nav>
+      </div>
+      <!-- banner section  -->
+
+      <section class="w-4/5 mx-auto">
+        <div class="flex justify-center items-center gap-5 pt-12 pb-6">
+          <button class="btn bg-white px-6 border">Donation</button>
+          <button class="btn bg-white border px-6">History</button>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <div>
+        <div></div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
