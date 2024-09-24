@@ -119,6 +119,8 @@ document
 
 // donation and History
 
+document.getElementById("donation_add_btn").classList.add("bg-lime-300");
+
 function showbtn(id) {
   document.getElementById("history").classList.add("hidden");
   document.getElementById("donation").classList.add("hidden");
