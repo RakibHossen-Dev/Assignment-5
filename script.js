@@ -43,7 +43,7 @@ document
       const transcation = document.getElementById("history");
       transcation.innerHTML += `
     <div class="border p-5 rounded-xl lg:w-4/5 w-11/12 mx-auto">
-    <p class='font-bold text-xl'>${inputField} Taka is  is ${donationPlace}</p>
+    <p class='font-bold text-xl'>${inputField} Taka is  ${donationPlace}</p>
     <p class='text-sm text-gray-600 mt-2'>Date: ${donationTime}</p>
     </div>
     `;
@@ -76,7 +76,7 @@ document
       const transcation = document.getElementById("history");
       transcation.innerHTML += `
      <div class="border p-5 rounded-xl lg:w-4/5 w-11/12 mx-auto">
-     <p class='font-bold text-xl'>${inputField} Taka is  is Donated for ${donationPlace}</p>
+     <p class='font-bold text-xl'>${inputField} Taka is Donated for ${donationPlace}</p>
      <p class='text-sm text-gray-600 mt-2'>Date: ${donationTime}</p>
      </div>
      `;
@@ -110,7 +110,7 @@ document
       const transcation = document.getElementById("history");
       transcation.innerHTML += `
   <div class="border p-5 rounded-xl lg:w-4/5 w-11/12 mx-auto">
-  <p class='font-bold text-xl'>${inputField} Taka is  is Donated for ${donationPlace}</p>
+  <p class='font-bold text-xl'>${inputField} Taka is Donated for ${donationPlace}</p>
   <p class='text-sm text-gray-600 mt-2'>Date: ${donationTime}</p>
   </div>
   `;
